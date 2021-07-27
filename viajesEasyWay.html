@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="viajesEasyWay.css">
+    <link rel="shortcut icon" href="globe.png" type="image/x-icon">
+    <title>Viajes EasyWay</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="indice">
+                <ul>
+                    <li>Home</li>
+                    <li>Viajes</li>
+                    <li>Alquiler</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <form id="formulario" onsubmit="return false"> 
+                <fieldset class="datos">
+                    <label for="destino">Destino:</label>
+                    <input list="destinos" id="destino">
+                        <datalist id="destinos">
+                            <option value="Canarias"></option>
+                            <option value="Galicia"></option>
+                            <option value="Baleares"></option>
+                            <option value="Asturias"></option>
+                            <option value="Pirineos"></option>
+                        </datalist>
+                    <label for="fechaInicio">Fecha inicio:</label>
+                    <input type="date" name="inputFechaInicio" 
+                    id="fechaInicio">
+                    <label for="fechaFin">Fecha fin:</label>
+                    <input type="date" name="inputFechaFin" 
+                    id="fechaFin">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="inputNombre" 
+                    id="nombre">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="inputApellidos" 
+                    id="apellidos">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="inputEmail" 
+                    id="email">
+                    <label for="tlf">Número de telefono:</label>
+                    <input type="tel" name="inputTlf" id="tlf"
+                    pattern="[6]{1}-[0-9]{2}-[0-9]{3}-[0-9]{3}">
+                    <button type="submit" onclick="getInformacion()">
+                        Enviar Información</button>
+                    <input type="reset">
+                </fieldset>
+                <fieldset class="datos">
+                    <label for="filtro">Filtrar solicitudes por:</label>
+                    <select name="filtro" id="filtro">
+                        <option value="Canarias">Canarias</option>
+                            <option value="Galicia">Galicia</option>
+                            <option value="Baleares">Baleares</option>
+                            <option value="Asturias">Aturias</option>
+                            <option value="Pirineos">Pirineos</option>
+                    </select>
+                    <button type="submit" onclick="getFiltro()">
+                    Filtrar</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <footer>
+                <adress class="contacto">
+                    <p>
+                    Correo electronico: 
+                    <a href="maito:info@viajeseasyway.com">
+                    info@viajeseasyway.com
+                    </a>
+                    </p>
+                    <p>Dirección: Science Square S/N, Dublin (Ireland)</p>
+                    <p>&copy; July 2020</p>
+                </adress>
+            </footer>
+        </section>
+        <script src="persona.js"></script>
+        <script src="viajesEasyWay.js"></script>
+    </main>
+</body>
+</html>
