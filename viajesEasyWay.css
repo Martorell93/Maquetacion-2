@@ -1,6 +1,68 @@
-/* body {
+* {
+    font-family: monospace;
+    font-size: 25px;
     background-image: url("pexels-sam-kolder-2387873.jpg");
-    background-repeat: none;
-    background-attachment:local;
-} */
-    
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: max-content;
+    height: max-content;
+}
+
+/* Flexbox sobre la clase main */
+
+.indice {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+}
+
+.indice li, a {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+a {
+    border:none;
+    color: black;
+    text-decoration: none;
+}
+
+.formulario {
+    border: outset 5px grey;
+    background: gainsboro;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    line-height: 40px;
+    margin: 50px;
+}
+
+.formulario input, label, button, select {
+    background: inherit;
+    border-radius: inherit;
+}
+
+.formulario input {
+    border: 1px dotted black;
+}
+
+.formulario button{
+    margin: 5px;
+}
+
+footer {
+    width: 40%;
+    font-size: small;
+    line-height: 30px;
+    margin: 50px;
+    color:antiquewhite;
+}
+
+footer a {
+    color:antiquewhite;
+}
