@@ -10,8 +10,6 @@
     height: max-content;
 }
 
-/* Flexbox sobre la clase main */
-
 .indice {
     display:flex;
     flex-flow:row wrap;
